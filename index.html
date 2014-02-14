@@ -6,24 +6,54 @@
 	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.1.min.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.4.1.min.js"></script>
+	<style type="text/css">
+		.image { 
+		   position: relative; 
+		   width: 100%;
+		   display: block;
+		   max-width: 100%;
+		}
+
+		h2 { 
+		   position: absolute; 
+		   top: 10%; 
+		   left: 0; 
+		   width: 100%; 
+		}
+		h2 span { 
+		   color: white; 
+		   font: bold 24px/45px Helvetica, Sans-Serif; 
+		   letter-spacing: +1px;  
+		   background: rgb(0, 0, 0); /* fallback color */
+		   background: rgba(0, 0, 0, 0.7);
+		   padding: 10px; 
+		}
+		h2 span.spacer {
+			padding:0 5px;
+		}
+		</style>
 </head>
 
 	<body>
 		<div data-role="page">
-		  <div data-role="header" data-position="fixed" data-fullscreen="true">
+		  <div data-role="header" data-position="fixed">
 				<h1>Mobile Application Demo</h1>
 				<a href="./pages/login.html" rel="external" data-role="button" data-icon="lock">Login</a>
 		  </div>
 
-		  <div data-role="content" style="text-align: center;"><br><br>
-			<p><h1>Byte-Unit.com<br> # Demo Mobile Application # </h1></p>
+		  <div data-role="content" style="padding: 0em">		
+			<div class="image">
+				<img src="app_banner.jpg" alt="" class="image"/>
+				<h2><span>Byte-Unit.com:<span class='spacer'></span><br /><span class='spacer'></span>Demo Mobile Application</span></h2>
+			</div>
+			<div style="padding: 1em">
 			<p>Herzlich Willkommen!</p>
-			<p></p>
 			<p>Dies ist eine Demo Applikation der Firma byte-unit.</p>
 			<p>Kontakt und weitere Informationen unter<br /><a href="http://www.byte-unit.com">byte-unit.com</a></p>
+			</div>
 		  </div>
 
-		  <div data-role="footer" data-position="fixed" data-fullscreen="true">
+		  <div data-role="footer" data-position="fixed">
 				<div data-role="navbar">
 				  <ul>
 					<li><a href="./pages/product.html" rel="external" data-icon="grid">Produkte</a></li>
